@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ToDoList</string>
+
+    <!-- option list for spinner view -->
+    <string-array name="listOption">
+        <item>Edit</item>
+        <item>Remind</item>
+    </string-array>
+
+</resources>

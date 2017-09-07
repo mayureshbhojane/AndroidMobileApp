@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- menu item to add a new task to db -->
+    <item
+        android:id="@+id/item_addNewTask"
+        android:icon="@android:drawable/ic_menu_add"
+        android:title="Add new task"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/item_registerEmail"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:title="Register email"
+        app:showAsAction="always" />
+</menu>

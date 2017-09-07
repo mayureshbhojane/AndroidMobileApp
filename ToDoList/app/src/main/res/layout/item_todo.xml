@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical">
+
+    <!-- view to display a single task -->
+    <TextView
+        android:id="@+id/textView_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:text="Hello"
+        android:textSize="40sp"/>
+
+    <!-- button to delete a completed task from db -->
+    <Button
+        android:id="@+id/button_completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/textView_task"
+        android:text="Completed"
+        android:onClick="completedTask" />
+
+    <!-- button to edit an existing task from db -->
+    <Button
+        android:id="@+id/button_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button_completed"
+        android:layout_toStartOf="@+id/button_completed"
+        android:layout_alignBottom="@+id/textView_task"
+        android:text="Edit"
+        android:onClick="editTask" />
+
+    <!-- spinner view to choose other options for a single task -->
+    <!--Spinner
+        android:id="@+id/spinner_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button_completed"
+        android:layout_toStartOf="@+id/button_completed"
+        android:layout_alignBottom="@+id/textView_task"
+        android:entries="@array/listOption"/-->
+
+</RelativeLayout>
